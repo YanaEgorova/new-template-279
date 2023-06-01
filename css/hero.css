@@ -1,0 +1,190 @@
+.hero {
+  padding: 10rem 0;
+  text-align: center;
+}
+.contacts__list {
+  display: none;
+}
+.hero .title {
+  font-family: var(--main-title-font);
+  text-transform: lowercase;
+  margin-bottom: 2rem;
+}
+.hero__block-right .text {
+  margin-bottom: 3rem;
+}
+.hero__btn {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  text-transform: lowercase;
+  width: fit-content;
+  margin: 0 auto;
+}
+.hero__btn svg {
+  display: block;
+  width: 4rem;
+  height: auto;
+  margin-left: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.phrase {
+  padding: 10rem 0;
+  text-align: center;
+}
+.phrase-svg, .phrase .pos {
+  display: none;
+}
+.phrase__block {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.phrase__title {
+  font-family: var(--main-title-font);
+  text-transform: lowercase;
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    text-align: left;
+    padding: 45rem 5rem 5rem;
+  }
+  .hero__btn:hover svg {
+    margin-left: 2rem;
+  }
+  .hero__wrapper-main {
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, var(--first-brand-color), var(--seventh-brand-color));
+  }
+  .hero__wrapper-main::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 65%;
+    right: 0;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, var(--first-brand-color), var(--seventh-brand-color));
+  }
+  .hero__wrapper-bottom {
+    background-image: linear-gradient(to bottom, var(--first-brand-color), var(--seventh-brand-color));
+  }
+  .hero__block {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 4;
+  }
+  .hero .title {
+    margin-bottom: 0;
+  }
+  .hero__block-left {
+    width: 33rem;
+    margin-right: 20rem;
+  }
+  .hero__block-right {
+    width: 35rem;
+  }
+  .hero__btn {
+    margin-left: 0;
+  }
+  .left-circle {
+    width: 70%;
+    padding-top: 70%;
+    background-image: linear-gradient(to bottom, var(--second-brand-color), var(--third-brand-color));
+    position: absolute;
+    border-radius: 50%;
+    top: -5rem;
+    left: -5rem;
+  }
+  .right-circle {
+    width: 80%;
+    padding-top: 80%;
+    background-image: linear-gradient(to bottom, var(--fourth-brand-color) 30%, var(--fifth-brand-color));
+    position: absolute;
+    border-radius: 50%;
+    top: -15rem;
+    right: -21.5rem;
+    z-index: 3;
+  }
+
+  .phrase {
+    text-align: left;
+    padding: 20rem  5rem;
+    position: relative;
+  }
+  .phrase__block {
+    margin-left: 0;
+    position: relative;
+  }
+  .phrase__block .text {
+    padding-left: 15rem;
+  }
+  .phrase__title {
+    max-width: 80%;
+    font-size: 5rem;
+  }
+  .phrase-svg {
+    display: block;
+    width: 5rem;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 5rem;
+    transform: translate(0, -50%);
+  }
+  .phrase .pos {
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 15%;
+    transform: translate(0, -50%);
+  }
+  .phrase .pos span {
+    font-size: 10rem;
+    font-family: var(--main-title-font);
+    color: transparent;
+    -webkit-text-stroke-width: .1rem;
+    -webkit-text-stroke-color: var(--main-text-color);
+    opacity: .3;
+    display: block;
+  }
+  .phrase .pos span:nth-child(2) {
+    margin-left: 15rem;
+  }
+  .phrase .pos span:last-child {
+    margin-left: 30rem;
+  }
+  .hero__wrapper-bottom {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero__wrapper-bottom::before {
+    width: 70%;
+    padding-top: 70%;
+    background-image: linear-gradient(to bottom, var(--sixth-brand-color), var(--seventh-brand-color));
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -52%;
+    display: block;
+    content: " ";
+  }
+  .hero__wrapper-bottom::after {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    display: block;
+    content: '';
+    border: .1rem solid var(--main-text-color);
+    border-radius: 50%;
+    bottom: 3rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
