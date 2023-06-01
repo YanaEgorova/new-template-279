@@ -99,7 +99,7 @@
     position: absolute;
     border-radius: 50%;
     top: -5rem;
-    left: -5rem;
+    right: 50rem;
   }
   .right-circle {
     width: 115rem;
@@ -108,7 +108,7 @@
     position: absolute;
     border-radius: 50%;
     top: -15rem;
-    right: -21.5rem;
+    left: 50.5rem;
     z-index: 3;
   }
 
@@ -171,7 +171,7 @@
     border-radius: 50%;
     top: 50%;
     transform: translate(0, -50%);
-    right: -52%;
+    left: 80%;
     display: block;
     content: " ";
   }
