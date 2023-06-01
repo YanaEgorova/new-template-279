@@ -93,8 +93,8 @@
     margin-left: 0;
   }
   .left-circle {
-    width: 70%;
-    padding-top: 70%;
+    width: 100rem;
+    height: 100rem;
     background-image: linear-gradient(to bottom, var(--second-brand-color), var(--third-brand-color));
     position: absolute;
     border-radius: 50%;
@@ -102,8 +102,8 @@
     left: -5rem;
   }
   .right-circle {
-    width: 80%;
-    padding-top: 80%;
+    width: 115rem;
+    height: 115rem;
     background-image: linear-gradient(to bottom, var(--fourth-brand-color) 30%, var(--fifth-brand-color));
     position: absolute;
     border-radius: 50%;
@@ -164,8 +164,8 @@
     overflow: hidden;
   }
   .hero__wrapper-bottom::before {
-    width: 70%;
-    padding-top: 70%;
+    width: 100rem;
+    height: 100rem;
     background-image: linear-gradient(to bottom, var(--sixth-brand-color), var(--seventh-brand-color));
     position: absolute;
     border-radius: 50%;
